@@ -1,0 +1,132 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  color: rgb(84, 14, 14);
+  overflow: hidden; /* prevent scrollbars when elements bounce */
+  position: relative; /* make absolute children relative to body */
+}
+img {
+  image-rendering: pixelated;
+}
+
+/* GAME PAGE */
+
+.game-title, .game-hud {
+  color: white;
+}
+
+.game {
+  background: url("../assets/bg.png") center / cover no-repeat;
+  min-height: 90vh;
+}
+
+.game h1 {
+  margin-top: 100px;
+}
+
+.game p {
+  margin: 10px 0;
+}
+
+.game-area {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+#heart {
+  width: 80px;
+  cursor: pointer;
+  position: absolute;
+  left: 110px;
+  top: 110px;
+}
+
+.pug {
+  width: 120px;
+  margin-top: 20px;
+}
+
+/* WIN PAGE */
+.win {
+  background: linear-gradient(#ff9a9e, #fad0c4);
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.banner {
+  background: #ff4d6d;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 400px;
+  margin-bottom: 100px;
+}
+
+.couple {
+  width: 300px;
+  border-radius: 50px;
+  margin-top: 40px;
+}
+
+.pug-big {
+  width: 150px;
+  margin: 10px;
+}
+
+/* BUTTON */
+button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  padding: 12px 20px;
+  border: 4px solid #ffffff;
+  background: #3b0404;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #8a0975;
+}
+
+.dvd {
+  position: absolute;
+  z-index: 1;
+}
+
+#couple {
+  width: 350px;
+}
+
+#pug {
+  width: 150px;
+}
+
+#caitvi {
+  width: 250px;
+}
+
+#jarvis {
+  width: 130px;
+}
+
+
+h2 {
+  position: absolute;      /* position relative to body */
+  top: 43%;                /* vertical center */
+  left: 50%;               /* horizontal center */
+  transform: translate(-50%, -50%); /* perfectly center both axes */
+  z-index: 10;             /* stay above bouncing images */
+  font-size: 22px;
+  text-align: center;
+}
+
+#yes-btn {
+  position: absolute;
+  top: 50%;                /* slightly below h2 */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
